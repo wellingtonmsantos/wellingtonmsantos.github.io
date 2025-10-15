@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:guilhermenegri.com)",
+      "Read(//c/Users/Wellington Santos/Pictures/Screenshots/**)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(node test-menu-automation.js)",
+      "Bash(docker:*)",
+      "Bash(npm install:*)",
+      "Bash(start http://127.0.0.1:8080/teste-menu.html)",
+      "Bash(timeout:*)",
+      "Bash(npm start)",
+      "Bash(npx @11ty/eleventy)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

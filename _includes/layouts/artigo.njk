@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="section container" style="max-width: 42rem;">
+  {# Botão voltar #}
+  <a href="/#artigos" class="back-button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    Voltar para Conteúdo
+  </a>
+
+  {# Cabeçalho do artigo #}
+  <header class="section__header" style="margin-bottom: 3rem;">
+    <h1 style="font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1rem;">
+      {{ title }}
+    </h1>
+    
+    {# Metadados #}
+    <p style="color: var(--color-muted); font-size: 0.95rem; margin: 0;">
+      {% if data %}
+        <time datetime="{{ data }}">{{ data | dataBR }}</time>
+      {% endif %}
+      
+      {% if tempoLeitura %}
+        <span> • {{ tempoLeitura }}</span>
+      {% endif %}
+      
+      {% if categoria %}
+        <span> • {{ categoria }}</span>
+      {% endif %}
+    </p>
+  </header>
+  
+  {# Imagem de capa (se existir) #}
+  {% if imagemCapa %}
+    <figure style="margin: 0 0 3rem; border-radius: 0.75rem; overflow: hidden;">
+      <img src="{{ imagemCapa }}" alt="{{ imagemCapaAlt or title }}" style="width: 100%; height: auto;">
+      {% if imagemCapaLegenda %}
+        <figcaption style="padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--color-muted); text-align: center; background: var(--color-surface);">
+          {{ imagemCapaLegenda }}
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+  
+  {# Conteúdo do artigo #}
+  <div class="card card--article fade-in" style="font-size: 1.125rem; line-height: 1.7;">
+    {{ content | safe }}
+  </div>
+  
+  {# Referências bibliográficas (se existirem) #}
+  {% if referencias or content.includes('<div class="footnotes">') %}
+    <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-outline);">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Referências</h2>
+      
+      {% if referencias %}
+        <ol style="font-size: 0.95rem; line-height: 1.6;">
+          {% for ref in referencias %}
+            <li id="ref-{{ loop.index }}" style="margin-bottom: 1rem;">
+              {{ ref | safe }}
+            </li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+    </div>
+  {% endif %}
+</article>

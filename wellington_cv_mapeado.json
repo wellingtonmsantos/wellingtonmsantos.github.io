@@ -1,0 +1,326 @@
+[
+  {
+    "Ano": "2023-2024",
+    "título": "MBA em Data Science & Analytics",
+    "instituicao": "USP/ESALQ",
+    "descricao": "Formação com 425h em Estatística, Machine Learning (supervisionado/não supervisionado), Séries Temporais, Data Wrangling, BI/Visualização, Engenharia de Dados e Analytics & Risk. [cite: 387, 414, 415, 454]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2022",
+    "título": "Engineering and Technology Researcher (Health Data Lab Specialist)",
+    "instituicao": "Sidia Institute of Science and Technology (Samsung)",
+    "descricao": "Estruturação de rotinas de laboratório de dados (coleta, QA, painéis), definição de KPIs, construção de dashboards executivos em Power BI e orientação de investimentos em pesquisa de saúde integrada à equipe de ciência de dados. [cite: 398, 399, 400, 485, 486]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2021",
+    "título": "Integration Technician",
+    "instituicao": "Napp Solution",
+    "descricao": "Técnico de integração responsável pela análise de banco de dados (Python & SQL) e criação de rotinas básicas de ETL para extrair dados de lojas e integrá-los ao data lake. [cite: 487]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2016-2019",
+    "título": "Mestrado em Ciências da Saúde (Educação Física)",
+    "instituicao": "Universidade Estadual de Campinas (UNICAMP)",
+    "descricao": "Conduziu um ensaio clínico randomizado sobre os efeitos dos treinos combinado e aeróbio na cognição de idosos hipertensos. [cite: 137, 195, 196, 421, 422, 423, 497] Obteve bolsa do CNPq. [cite: 200]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2018-2019",
+    "título": "Pesquisador Visitante Internacional (ELAP)",
+    "instituicao": "University of Waterloo (Canadá)",
+    "descricao": "Intercâmbio de 5 meses financiado pelo programa Emerging Leaders in the Americas (ELAP) para desenvolver habilidades de análise de dados com a Dra. Laura Middleton no Brain & Body Lab. [cite: 168, 207, 210, 215, 223, 228, 418, 419, 420, 460, 498] Experiência com análise de dados utilizando R Studio. [cite: 499, 500, 501, 502, 503]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+    {
+    "Ano": "Não especificado",
+    "título": "Pesquisador Visitante Internacional",
+    "instituicao": "University of Illinois Urbana-Champaign (EUA)",
+    "descricao": "Estágio internacional de 40 dias com foco em redação de artigos, apresentação de dados em congressos e desenvolvimento de novos projetos de pesquisa. [cite: 168, 416, 417, 458]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2016-Presente",
+    "título": "Membro de Grupo de Pesquisa",
+    "instituicao": "Grupo de Fisiologia do Exercício e Avaliação de Performance (CNPQ) - UNICAMP",
+    "descricao": "Participação como pesquisador no grupo certificado pelo CNPQ, coordenado pelas Dras. Mara Patrícia Traina Chacon-Mikahil e Cláudia Regina Cavaglieri. [cite: 138, 139, 140, 141, 142, 143, 144, 478, 479, 480, 481, 482, 483, 507, 508, 509, 510]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2016-2018 e 2019",
+    "título": "Treinador Físico / Professor de CrossFit",
+    "instituicao": "PAM CrossFit",
+    "descricao": "Implementação e monitoramento de rotinas de exercícios, planejamento de aulas, desenvolvimento de planilhas para avaliação de composição corporal e física (1 RM, resistência muscular). [cite: 149, 151, 152, 153, 154, 490, 523, 525, 526, 527, 528, 529, 530, 531]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+    {
+    "Ano": "Não especificado",
+    "título": "Membro de Grupo de Atletas",
+    "instituicao": null,
+    "descricao": "Participou do grupo de atletas do tricampeão brasileiro de Crossfit, Francisco Javier (Chiquinho). [cite: 150, 524]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Responsável Técnico - WellTeam",
+    "instituicao": null,
+    "descricao": "Liderança do grupo de treino online WellTeam, focado no desenvolvimento de valências motoras para pessoas com rotinas ocupadas. [cite: 148, 522]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Desenvolvimento de Monitoramento de Carga de Treino",
+    "instituicao": "Seleção Brasileira de Escalada Esportiva",
+    "descricao": "Criação de material e método para monitorar a carga de treino implementado na Seleção Brasileira de Escalada, em colaboração com Arthur Gáspari. [cite: 155, 533]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Desenvolvimento de Monitoramento de Carga de Treino",
+    "instituicao": "Seleção Brasileira de Rugby de Cadeira de Rodas",
+    "descricao": "Criação de material e método para monitorar a carga de treino, implementado pela coordenadora técnica Ana Ramkrapes. [cite: 156, 534]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2017",
+    "título": "Programa de Estágio Docente (PED)",
+    "instituicao": "UNICAMP",
+    "descricao": "Estágio docente na disciplina 'Adaptações dos sistemas orgânicos ao treinamento físico' no curso de Educação Física. [cite: 159, 262, 263, 264, 538]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Professor",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2016-2017",
+    "título": "Monitoria em Iniciação Científica (PIBIC-EM/CNPq)",
+    "instituicao": "UNICAMP",
+    "descricao": "Atuação como monitor no projeto 'Biomarcadores de responsividade do consumo máximo de oxigênio ao treinamento aeróbio: uma abordagem metabolômica'. [cite: 536, 537]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2017",
+    "título": "Aula Ministrada: Exercício e função cognitiva no envelhecimento",
+    "instituicao": "UNICAMP",
+    "descricao": "Aula ministrada na disciplina 'EF-611 - Processo de envelhecimento e educação física'. [cite: 160, 539]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Professor",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2017",
+    "título": "Aula Ministrada: Treinamento Intervalado",
+    "instituicao": "UNICAMP",
+    "descricao": "Aula ministrada na disciplina 'EF-213 Fundamentos metodológicos do Treinamento Desportivo'. [cite: 161, 540]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Professor",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2018",
+    "título": "Palestra: Avaliação Isocinética",
+    "instituicao": "UNICAMP",
+    "descricao": "Palestra na disciplina 'EF-512 - Adaptações dos sistemas orgânicos ao treinamento físico'. [cite: 162, 542]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Professor",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2020",
+    "título": "Palestra: Fitness funcional (Cross Training)",
+    "instituicao": "Anhanguera Educacional",
+    "descricao": "Palestra com abordagem integrada, teórica e prática, sobre Cross Training. [cite: 163, 543, 544, 545]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Professor",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2014-2015",
+    "título": "Especialização em Fisiologia do Exercício e Treinamento",
+    "instituicao": "Anhanguera Educacional",
+    "descricao": "Curso de especialização com 360 horas de carga horária. [cite: 136, 201, 202, 203, 462, 463, 496]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2011-2014",
+    "título": "Graduação em Educação Física (Licenciatura e Bacharelado)",
+    "instituicao": "Centro Universitário Anhanguera",
+    "descricao": "Formação superior em Educação Física. [cite: 135, 216, 217, 424, 425, 461, 495]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2020",
+    "título": "Curso de Introdução ao Python",
+    "instituicao": "Curso em Vídeo",
+    "descricao": "Curso online de Python (Mundo 1 e 2) com carga horária de 80 horas. [cite: 613, 614]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Curso de Tração Online",
+    "instituicao": "Founder Institute",
+    "descricao": "Participação no programa de aceleração de startups sobre como validar e crescer no mundo de startups. [cite: 511]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2016",
+    "título": "Curso de Verão: Estatística na Educação Física e Esporte",
+    "instituicao": "Universidade de São Paulo (USP)",
+    "descricao": "Curso de 40 horas sobre aplicações e implicações de conceitos de estatística em estudos da Educação Física e Esporte. [cite: 236, 237, 238, 239, 606, 607, 608]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2015",
+    "título": "Curso de Verão: Comportamento Motor e Controle Neural",
+    "instituicao": "Universidade de São Paulo (USP)",
+    "descricao": "Curso de 40 horas sobre comportamento motor e controle neural de movimentos. [cite: 240, 241, 242]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2014",
+    "título": "Curso Online: Exercise Physiology",
+    "instituicao": "The University of Melbourne",
+    "descricao": "Curso online 'Exercise Physiology: Understanding the Athlete Within' através da plataforma Coursera. [cite: 244, 245, 605]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "2017",
+    "título": "Curso de Coleta de Sangue e Venopunção",
+    "instituicao": "Cruz Vermelha Brasileira",
+    "descricao": "Curso de 8 horas para coleta de sangue e venopunção. [cite: 231, 232, 233, 234, 235, 515]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Projeto de Análise de Consumo de Oxigênio",
+    "instituicao": "GitHub",
+    "descricao": "Análise de um dataset com diferentes pontos de tempo e grupos. O projeto incluiu organização, transformação, limpeza e agregação de dados, além da aplicação do algoritmo k-means. [cite: 440, 441, 442, 443, 444]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Projeto de Web Scraping do Mercado de Ações",
+    "instituicao": "GitHub",
+    "descricao": "Desenvolvimento de um projeto em Python para coleta de dados de páginas web sobre o mercado de ações. [cite: 447]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Projeto de Análise de Dados do Galaxy Watch 4",
+    "instituicao": "GitHub",
+    "descricao": "Utilização de Python para extrair e realizar análises exploratórias de dados de frequência cardíaca de um Samsung Galaxy Watch 4. [cite: 446]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Dashboard para Monitoramento de Rotina de Exercícios",
+    "instituicao": null,
+    "descricao": "Projeto em construção de um dashboard em Google Data Studio para acompanhamento de rotinas de exercícios. [cite: 450, 452, 453]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Tecnologia",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "Não especificado",
+    "título": "Estudos de Data Science no Kaggle",
+    "instituicao": "Kaggle/GitHub",
+    "descricao": "Preparação de datasets para rodar modelos de Machine Learning. [cite: 445]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+    {
+    "Ano": "2018",
+    "título": "Apresentação em Congresso: Both Combined And Aerobic Training Improve Cognitive Function In Hypertensive Elderly",
+    "instituicao": "American College of Sports Medicine (ACSM) Annual Meeting",
+    "descricao": "Apresentação de pesquisa em congresso internacional em Minneapolis, MN, EUA. [cite: 354, 361, 561, 562, 563]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2017",
+    "título": "Apresentação em Congresso: Melhora de funções cognitivas em idosos hipertensos após programa de treinamento combinado",
+    "instituicao": "Congresso Internacional de Educação Física e Motricidade Humana",
+    "descricao": "Apresentação de trabalho em congresso em Rio Claro. [cite: 328, 329, 330, 338, 339, 340, 365, 366, 552, 553, 554, 555, 556, 557, 558, 559, 560]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2016",
+    "título": "Apresentação em Congresso: A IMPORTÂNCIA DAS REPETIÇÕES MÁXIMAS PARA O DESENVOLVIMENTO DA FORÇA",
+    "instituicao": "Congresso Brasileiro de Atividade Motora Adaptada",
+    "descricao": "Apresentação de trabalho em congresso em Campinas. [cite: 331, 332, 341, 368, 547, 548, 549, 550, 551]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2018",
+    "título": "Seminário de Weightlifting",
+    "instituicao": null,
+    "descricao": "Participação em seminário de levantamento de peso com Dmitry Klokov em Etobicoke, ON, Canadá. [cite: 146, 512, 611]",
+    "tag_teorica-pratica": "Prático",
+    "tag_funcao": "Treinador Físico",
+    "Formacao_well": "Projeto well"
+  },
+  {
+    "Ano": "2018",
+    "título": "Participação em Congresso de Neurociência",
+    "instituicao": "UNICAMP",
+    "descricao": "Participação no 5th BRAINN Congress na Faculdade de Ciências Médicas (FCM) da UNICAMP. [cite: 351, 610]",
+    "tag_teorica-pratica": "Teórico",
+    "tag_funcao": "Ciência",
+    "Formacao_well": "Formacao"
+  }
+]

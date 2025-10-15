@@ -1,0 +1,47 @@
+[
+  {
+    "nome": "Wellington",
+    "modalidade": "CrossFit",
+    "formato": ["Presencial", "Online"]
+  },
+  {
+    "nome": "Tuane",
+    "modalidade": "CrossFit",
+    "formato": ["Presencial", "Online"]
+  },
+  {
+    "nome": "NEW ERA",
+    "modalidade": "CrossFit",
+    "formato": ["Presencial", "Online"]
+  },
+  {
+    "nome": "Carlos",
+    "modalidade": "Personal Trainer",
+    "formato": ["Presencial"]
+  },
+  {
+    "nome": "Beatriz",
+    "modalidade": "Personal Trainer",
+    "formato": ["Presencial"]
+  },
+  {
+    "nome": "Felipe Dunder",
+    "modalidade": "Personal Trainer",
+    "formato": ["Presencial"]
+  },
+  {
+    "nome": "Rosália",
+    "modalidade": "Personal Trainer",
+    "formato": ["Presencial"]
+  },
+  {
+    "nome": "Marcela",
+    "modalidade": "Personal Trainer",
+    "formato": ["Online"]
+  },
+  {
+    "nome": "Demetrius",
+    "modalidade": "Personal Trainer",
+    "formato": ["Presencial", "Online"]
+  }
+]

@@ -1,0 +1,71 @@
+<article class="case-card fade-in"
+  data-category="{{ caso.data.categoria }}"
+  {% if caso.data.modalidade %}data-modalidade="{{ caso.data.modalidade }}"{% endif %}
+  {% if caso.data.formato %}data-formato="{{ caso.data.formato | join(',') if caso.data.formato | isArray else caso.data.formato }}"{% endif %}
+  {% if caso.data.objetivo %}data-objetivo="{{ caso.data.objetivo | join(',') if caso.data.objetivo | isArray else caso.data.objetivo }}"{% endif %}>
+  <div class="case-card__header">
+    <div class="case-card__avatar">
+      {% if caso.data.foto %}
+        <img src="{{ caso.data.foto }}" alt="{{ caso.data.nome }}" width="90" height="90" loading="lazy">
+      {% else %}
+        <div class="case-card__avatar-placeholder">{{ caso.data.nome | slice(0, 2) | upper }}</div>
+      {% endif %}
+    </div>
+    <div class="case-card__info">
+      <h3 class="case-card__name">{{ caso.data.nome }}</h3>
+      <p class="case-card__role">{{ caso.data.profissao }}</p>
+      <div class="case-card__badges">
+        {# 1. Modalidade #}
+        {% if caso.data.modalidade %}
+          <span class="case-card__badge case-card__badge--modalidade">{{ caso.data.modalidade }}</span>
+        {% endif %}
+
+        {# 2. Formato #}
+        {% if caso.data.formato %}
+          {% if caso.data.formato | isArray %}
+            {% for fmt in caso.data.formato %}
+              <span class="case-card__badge case-card__badge--formato">{{ fmt }}</span>
+            {% endfor %}
+          {% else %}
+            <span class="case-card__badge case-card__badge--formato">{{ caso.data.formato }}</span>
+          {% endif %}
+        {% endif %}
+
+        {# 3. Objetivo #}
+        {% if caso.data.objetivo %}
+          {% if caso.data.objetivo | isArray %}
+            {% for obj in caso.data.objetivo %}
+              <span class="case-card__badge case-card__badge--objetivo">{{ obj }}</span>
+            {% endfor %}
+          {% else %}
+            <span class="case-card__badge case-card__badge--objetivo">{{ caso.data.objetivo }}</span>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="case-card__click-hint">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+      <circle cx="12" cy="12" r="3"></circle>
+    </svg>
+    <span>Ver história completa</span>
+  </div>
+
+  <div class="case-card__body">
+    <div class="case-card__section">
+      <strong class="case-card__label">Contexto:</strong>
+      <p>{{ caso.data.contexto }}</p>
+    </div>
+
+    <div class="case-card__section case-card__section--result">
+      <strong class="case-card__label">Resultado:</strong>
+      <p>{{ caso.data.resultado }}</p>
+    </div>
+  </div>
+
+  <div class="case-card__footer">
+    <span class="case-card__timeline">📅 {{ caso.data.tempo }} de acompanhamento</span>
+  </div>
+</article>

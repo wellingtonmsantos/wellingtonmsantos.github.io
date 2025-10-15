@@ -1,0 +1,14 @@
+{# Card de artigo simplificado - só título e descrição #}
+<article class="articles__card fade-in">
+  <a class="articles__card-link" href="{{ artigo.url }}">
+    <div class="articles__card-body">
+      <span class="articles__link">Ler artigo</span>
+      <h3>{{ artigo.data.title }}</h3>
+      <p>{{ artigo.data.resumo or artigo.data.description }}</p>
+
+      {% if artigo.data.tempoLeitura %}
+        <span class="articles__meta">{{ artigo.data.tempoLeitura }}</span>
+      {% endif %}
+    </div>
+  </a>
+</article>

@@ -1,0 +1,77 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\site-well",
+                "C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\site-well\\\\assets"
+            ]
+        },
+        "puppeteer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ],
+            "env": {
+                "MCP_ALLOWED_ORIGINS": "http://localhost:8080,https://wellingtonsantos.github.io"
+            }
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "mcp-compass": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@liuyoshio/mcp-compass"
+            ]
+        },
+        "gemini-cli": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "gemini-mcp-tool"
+            ]
+        },
+        "task-master-ai": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "task-master-ai"
+            ]
+        },
+        "github": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "GITHUB_PERSONAL_ACCESS_TOKEN",
+                "ghcr.io/github/github-mcp-server"
+            ]
+        },
+        "context7": {
+            "url": "https://mcp.context7.com/mcp"
+        },
+        "playwright": {
+            "command": "npx",
+            "args": ["-y", "@playwright/mcp@latest"]
+        },
+        "figma": {
+            "command": "pwsh",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "$ErrorActionPreference = 'Stop'; if (-not $env:FIGMA_API_KEY) { Write-Error 'FIGMA_API_KEY environment variable is not set.' } else { npx -y figma-developer-mcp --figma-api-key=$env:FIGMA_API_KEY --stdio }"
+            ]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Wellington Santos",
+  "description": "Portfólio de Wellington Santos com formações, projetos e contato profissional.",
+  "url": "https://wellingtonsantos.dev",
+  "author": {
+    "name": "Wellington Santos",
+    "email": "contato@wellingtonsantos.dev"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/wellingtonsantos",
+    "twitter": "https://twitter.com/wellingtonsantos",
+    "instagram": "https://instagram.com/wellingtonsantos",
+    "youtube": "https://youtube.com/@wellingtonsantos"
+  },
+  "buildTime": "now"
+}

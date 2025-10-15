@@ -1,0 +1,26 @@
+{
+  "name": "site-well",
+  "version": "0.1.0",
+  "description": "Personal site for Wellington Santos",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "clean": "rimraf _site",
+    "dev:old": "live-server --port=8080 --no-browser --watch=index.html,blog,assets",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"assets/css/**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@stylistic/stylelint-config": "^3.0.1",
+    "@stylistic/stylelint-plugin": "^4.0.0",
+    "htmlhint": "^1.0.0",
+    "live-server": "^1.2.2",
+    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-footnote": "^4.0.0",
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

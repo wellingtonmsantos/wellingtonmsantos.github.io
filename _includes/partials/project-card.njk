@@ -1,0 +1,14 @@
+{# Card de projeto - título, resumo e tecnologias (sem imagem) #}
+<article class="articles__card fade-in">
+  <a class="articles__card-link" href="{{ projeto.url }}">
+    <div class="articles__card-body">
+      <span class="articles__link">Ver projeto</span>
+      <h3>{{ projeto.data.title }}</h3>
+      <p>{{ projeto.data.resumo or projeto.data.description }}</p>
+
+      {% if projeto.data.tecnologias %}
+        <span class="articles__meta">{{ projeto.data.tecnologias }}</span>
+      {% endif %}
+    </div>
+  </a>
+</article>
