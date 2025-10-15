@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="a" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff4c29" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2d2d2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#111"/>
+  <rect x="40" y="40" width="560" height="320" rx="24" fill="url(#a)"/>
+  <rect x="80" y="96" width="240" height="24" rx="12" fill="rgba(255,255,255,0.85)"/>
+  <rect x="80" y="144" width="320" height="18" rx="9" fill="rgba(255,255,255,0.55)"/>
+  <rect x="80" y="180" width="280" height="18" rx="9" fill="rgba(255,255,255,0.35)"/>
+  <rect x="80" y="240" width="160" height="48" rx="16" fill="#111"/>
+  <text x="360" y="292" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" opacity="0.25">Landing</text>
+</svg>

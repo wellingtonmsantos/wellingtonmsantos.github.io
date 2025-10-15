@@ -1,0 +1,40 @@
+<h2>Site Wellington Santos</h2>
+<p>Este repositório contém o site estático construído com <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+<h3>Requisitos</h3>
+<ul>
+<li>Node.js 18 ou superior (recomendado LTS)</li>
+<li>npm (instalado junto com o Node.js)</li>
+</ul>
+<h3>Instalação</h3>
+<p><code>Bash npm install </code></p>
+<h3>Desenvolvimento local</h3>
+<p><code>Bash npm start </code></p>
+<p>Eleventy iniciará o servidor em <a href="http://localhost:8080/">http://localhost:8080/</a> com live reload.</p>
+<h3>Build</h3>
+<p><code>Bash npm run build </code></p>
+<p>Os arquivos gerados ficam na pasta _site/.</p>
+<h3>Deploy com GitHub Pages</h3>
+<ol>
+<li>Crie um repositório no GitHub e conecte o projeto:<br>
+<code>Bash git remote add origin git@github.com:SEU_USUARIO/site-well.git git add . git commit -m &quot;chore: inicializa site Eleventy&quot; git push -u origin main </code></li>
+<li>Adicione a workflow em .github/workflows/eleventy.yml (já presente no projeto) para buildar e enviar o conteúdo de _site.</li>
+<li>No GitHub, acesse <strong>Settings → Pages</strong> e selecione <strong>GitHub Actions</strong> como fonte.</li>
+<li>Aguarde o workflow terminar; seu site estará disponível em https://SEU_USUARIO.github.io/site-well/.</li>
+</ol>
+<h3>Estrutura principal</h3>
+<ul>
+<li>index.njk – página principal</li>
+<li>casos/ – dados dos casos de clientes</li>
+<li>projetos/ – projetos em destaque</li>
+<li>rtigos/ – conteúdos publicados</li>
+<li>_includes/ – layouts e componentes Nunjucks</li>
+<li>ssets/ – CSS, JS e imagens</li>
+</ul>
+<h3>Scripts adicionais</h3>
+<ul>
+<li></li>
+</ul>
+<h2>pm run lint – roda HTMLHint e Stylelint</h2>
+<p>pm run clean – remove a pasta _site</p>
+<h3>Licença</h3>
+<p>Defina aqui a licença de acordo com a sua necessidade (por exemplo, MIT).</p>
