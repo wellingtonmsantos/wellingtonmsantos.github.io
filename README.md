@@ -47,9 +47,9 @@ Os arquivos gerados ficam na pasta _site/.
 - index.njk – página principal
 - casos/ – dados dos casos de clientes
 - projetos/ – projetos em destaque
-- rtigos/ – conteúdos publicados
+- artigos/ – conteúdos publicados
 - _includes/ – layouts e componentes Nunjucks
-- ssets/ – CSS, JS e imagens
+- assets/ – CSS, JS e imagens
 
 ### Scripts adicionais
 
