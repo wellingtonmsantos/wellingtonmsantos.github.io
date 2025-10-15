@@ -22,6 +22,18 @@ const isVisible = (item) => {
   return true;
 };
 
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  return {
+    // Recebe do workflow; se não vier, usa "/"
+    pathPrefix: process.env.PATH_PREFIX || "/"
+  };
+};
+
+
+
 module.exports = function(eleventyConfig) {
   // ==========================================
   // PLUGINS

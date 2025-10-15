@@ -22,5 +22,21 @@
     "markdown-it-footnote": "^4.0.0",
     "stylelint": "^16.8.1",
     "stylelint-config-standard": "^36.0.0"
-  }
+  },
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellingtonmsantos/wellingtonmsantos.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wellingtonmsantos/wellingtonmsantos.github.io/issues"
+  },
+  "homepage": "https://github.com/wellingtonmsantos/wellingtonmsantos.github.io#readme"
 }
