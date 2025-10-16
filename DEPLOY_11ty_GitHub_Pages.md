@@ -1,33 +1,33 @@
-# Eleventy + GitHub Pages (Actions) — Setup & Atualização
+# Eleventy + GitHub Pages (Actions) - Setup & Atualização
 
-Este guia coloca seu site **Eleventy (11ty)** no ar usando **GitHub Pages** com **GitHub Actions** e mostra o fluxo de **atualização em um único lugar** (commit → push → publica).
+Este guia publica o seu site **Eleventy (11ty)** usando **GitHub Pages** com **GitHub Actions**, garantindo o fluxo completo (**commit → push → site atualizado**).
 
-> **URL curta**: use o repositório especial `wellingtonmsantos.github.io` para o site principal em `https://wellingtonmsantos.github.io/`.
+> **URL curta**: mantenha o repositório `wellingtonmsantos.github.io` para servir `https://wellingtonmsantos.github.io/`.
 
 ---
 
-## ✅ Pré‑requisitos
+## Pré-requisitos
 - **Git** instalado e autenticado no GitHub.
 - **Node.js** LTS (18 ou 20) + **npm**.
-- Repositório **público** no GitHub chamado **`wellingtonmsantos.github.io`** (já criado).
+- Repositório **público** chamado **`wellingtonmsantos.github.io`**.
 
 ---
 
 ## 1) Inicializar o projeto (local)
-No diretório do seu site:
+No diretório do site:
 ```bash
 npm init -y
 npm i -D @11ty/eleventy
 ```
 
-> Se ainda não houver conteúdo, crie um `index.html` simples para testar.
+> Ainda sem conteúdo? Crie um `index.html` simples para validar.
 
 ---
 
-## 2) Configuração mínima de projeto
+## 2) Configuração mínima do projeto
 
 ### `package.json`
-Adicione os scripts de build/servidor de desenvolvimento:
+Adicione os scripts de build/servidor:
 ```json
 {
   "scripts": {
@@ -40,8 +40,8 @@ Adicione os scripts de build/servidor de desenvolvimento:
 }
 ```
 
-### `.eleventy.js` (opcional e enxuto)
-Para site na raiz do domínio, manter o *pathPrefix* em `/`:
+### `.eleventy.js`
+Para site na raiz do domínio (`*.github.io`), mantenha o `pathPrefix` em `/`:
 ```js
 module.exports = function () {
   return { pathPrefix: "/" };
@@ -59,7 +59,7 @@ _site/
 ---
 
 ## 3) Workflow do GitHub Actions
-Crie o arquivo **`.github/workflows/deploy.yml`**:
+Crie **`.github/workflows/deploy.yml`**:
 
 ```yaml
 name: Deploy Eleventy to GitHub Pages
@@ -101,11 +101,13 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
+> Se houver um workflow antigo ou configurações de “Deploy from branch”, remova-os para evitar conflitos.
+
 ---
 
 ## 4) Conectar ao repositório remoto e publicar a primeira versão
 
-> **Repositório alvo:** `https://github.com/wellingtonmsantos/wellingtonmsantos.github.io`
+> **Repositório remoto:** `https://github.com/wellingtonmsantos/wellingtonmsantos.github.io`
 
 ```bash
 git init
@@ -116,53 +118,59 @@ git remote add origin https://github.com/wellingtonmsantos/wellingtonmsantos.git
 git push -u origin main
 ```
 
-No GitHub (web), vá em **Settings → Pages** e, em **Source**, selecione **GitHub Actions**.
+No GitHub (web), abra **Settings → Pages → Build and deployment → Source** e selecione **GitHub Actions**. Certifique-se de **não** deixar “Deploy from a branch” habilitado.
 
 A primeira execução do workflow:
 - instala dependências;
 - gera `_site/` com o Eleventy;
 - publica no Pages.
 
-**URL:** `https://wellingtonmsantos.github.io/`
+**URL final:** `https://wellingtonmsantos.github.io/`
 
 ---
 
-## 5) Fluxo de atualização em um único lugar (dia a dia)
+## 5) Fluxo diário (edição → publicação)
 
-Sempre que alterar algo localmente:
+Sempre que alterar algo:
 ```bash
-npm run dev           # opcional: validar localmente
-git status            # ver o que mudou
+npm run dev           # opcional: testar localmente
+git status            # visualizar mudanças
 git add -A
-git commit -m "feat: descreva a mudança aqui"
-git push origin main  # o Actions publica automaticamente
+git commit -m "feat: descreva a mudança"
+git push origin main  # Actions cuida do deploy
 ```
 
-Para pegar mudanças feitas em outro computador antes de começar:
+Para apenas disparar um rebuild (sem mudanças de conteúdo):
+```bash
+git commit --allow-empty -m "chore: trigger deploy"
+git push
+```
+
+Antes de começar em outra máquina:
 ```bash
 git pull origin main
 ```
 
-Forçar recarregamento no navegador se não aparecer na hora: **Ctrl + F5**.
+Depois do deploy, atualize o navegador com **Ctrl + F5**.
 
 ---
 
 ## 6) Dicas e diagnóstico rápido
 
-- **Falha no Actions?** Abra a aba **Actions** no GitHub e verifique os logs do job `build` e `deploy-pages`.
+- **Falha no Actions?** Verifique os logs dos jobs `build` e `deploy-pages` na aba **Actions**.
+- **Deploy não atualiza?** Confirme em **Settings → Pages** que a fonte continua como **GitHub Actions**.
 - **Node incompatível?** Ajuste `node-version` para `18` ou `20` no workflow.
-- **404 em CSS/JS?** Para o site raiz `*.github.io`, `pathPrefix: "/"` é suficiente. (Se migrar para subpasta, use `EleventyHtmlBasePlugin` + `pathPrefix` correspondente.)
-- **Não commitar `_site/`**: ele é gerado no CI.
-- **Instalou/Removeu pacotes?** O commit deve incluir `package.json` **e** `package-lock.json`.
+- **404 em arquivos estáticos?** Para domínios `*.github.io`, `pathPrefix: "/"` é suficiente (use `EleventyHtmlBasePlugin` + `pathPrefix` apenas para subpastas).
+- **Não commite `_site/`**: a pasta é criada apenas no CI.
+- **Instalou/removeu dependências?** Commits devem incluir `package.json` **e** `package-lock.json`.
 
 ---
 
 ## 7) (Opcional) Domínio próprio curto
-1. Em **Settings → Pages → Custom domain**, informe seu domínio (ex.: `ws.dev`).
-2. No DNS do seu domínio, crie um **CNAME** apontando para `wellingtonmsantos.github.io`.
-3. O GitHub configura HTTPS automaticamente.
+1. Em **Settings → Pages → Custom domain**, informe o domínio (ex.: `ws.dev`).
+2. No DNS do domínio, crie um **CNAME** apontando para `wellingtonmsantos.github.io`.
+3. O GitHub ativa HTTPS automaticamente.
 
 ---
 
-### Pronto!
-Você tem deploy automatizado: **edite → commit → push → publicado**.
+Pronto! O ciclo ficou automático: **edite → commit → push → site publicado**.

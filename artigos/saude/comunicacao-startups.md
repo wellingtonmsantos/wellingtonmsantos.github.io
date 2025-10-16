@@ -6,6 +6,7 @@ resumo: Muitas ideias brilhantes se perdem quando a narrativa não conecta com i
 imagem: /assets/img/blog-comunicacao.svg
 tempoLeitura: 7 min de leitura
 data: 2025-10-10
+visivel: false
 # permalink: /artigos/comunicacao-startups/
 ---
 

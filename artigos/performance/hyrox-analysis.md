@@ -6,6 +6,7 @@ resumo: Vamos analisar a competição de HYROX e como podemos usar isso para gui
 # imagem: /assets/img/blog-comunicacao.svg
 # tempoLeitura: 7 min de leitura
 data: 2025-5-5
+visivel: false
 # permalink: /artigos/comunicacao-startups/
 ---
  

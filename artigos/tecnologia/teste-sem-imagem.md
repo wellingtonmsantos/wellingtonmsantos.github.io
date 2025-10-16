@@ -5,6 +5,7 @@ categoria: tecnologia
 resumo: Este artigo não tem imagem, então vai mostrar o ícone WS no card.
 tempoLeitura: 3 min de leitura
 data: 2025-10-13
+visivel: false
 # permalink: /artigos/teste-sem-imagem/
 ---
 # Teste do Placeholder
