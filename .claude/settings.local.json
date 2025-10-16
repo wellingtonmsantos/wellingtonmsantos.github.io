@@ -3,7 +3,6 @@
     "allow": [
       "Bash(npm run lint)",
       "Bash(npm run dev:*)",
-      "WebFetch(domain:guilhermenegri.com)",
       "Read(//c/Users/Wellington Santos/Pictures/Screenshots/**)",
       "WebFetch(domain:127.0.0.1)",
       "Bash(node test-menu-automation.js)",
