@@ -91,7 +91,8 @@ main > .section + .section {
 }
 
 .section__header {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;                                         
+  text-align: center;   
 }
 
 .section__header h2 {
@@ -101,8 +102,9 @@ main > .section + .section {
 }
 
 .section__header p {
-  color: var(--color-muted);
-  max-width: 40rem;
+  color: var(--color-muted);                                   
+  max-width: 40rem;                                            
+  margin: 0 auto;  
 }
 
 .button {
