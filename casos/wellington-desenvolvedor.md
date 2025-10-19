@@ -1,8 +1,9 @@
 ---
 nome: Wellington
 profissao: Professor, Cientista
-categoria: [performance, saude]
+
 foto: /assets/img/casos/wellington.jpg
+tipo: pessoa
 modalidade: CrossFit
 formato: [Presencial, Online]
 objetivo: [Performance, Saude]

@@ -329,7 +329,7 @@ tabLists.forEach((tabList) => {
 // Implementa paginação com "Load More" para categorias com muitos artigos
 // Inicialmente mostra 6 cards, depois carrega 3 de cada vez
 
-const INITIAL_VISIBLE = 6;
+const INITIAL_VISIBLE = 4;
 const LOAD_MORE_COUNT = 3;
 
 const loadMoreButtons = Array.from(document.querySelectorAll(".articles__load-more-btn"));

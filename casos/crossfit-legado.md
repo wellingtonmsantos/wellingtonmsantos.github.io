@@ -1,9 +1,8 @@
 ---
-nome: Time intermediário - KVERA GAMES
-# profissao: CEO ILUMI
-
-foto: /assets/img/casos/ct-bezerra.jpg
-tipo: pessoa
+nome: Cross Training Legado
+profissao: Box - Campinas/SP
+foto: /assets/img/casos/cf-legado.jpg
+tipo: empresa
 modalidade: CrossFit
 formato: [Presencial]
 objetivo: [Performance]

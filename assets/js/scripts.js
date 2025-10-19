@@ -326,7 +326,7 @@ tabLists.forEach((tabList) => {
 // ============================================
 // SEÇÃO 5: LOAD MORE FUNCTIONALITY
 // ============================================
-// Implementa paginação com "Load More" para categorias com muitos artigos
+// Implementa paginação com "Load More" para categorias com muitos artigos/casos
 // Inicialmente mostra 6 cards, depois carrega 3 de cada vez
 
 const INITIAL_VISIBLE = 6;
@@ -336,13 +336,23 @@ const loadMoreButtons = Array.from(document.querySelectorAll(".articles__load-mo
 
 loadMoreButtons.forEach((button) => {
   const category = button.getAttribute("data-category");
-  const grid = document.querySelector(`.articles__grid[data-category="${category}"]`);
+
+  // Suporta tanto articles__grid quanto cases__grid
+  let grid = document.querySelector(`.articles__grid[data-category="${category}"]`);
+  if (!grid) {
+    grid = document.querySelector(`.cases__grid[data-category="${category}"]`);
+  }
 
   if (!grid) {
     return;
   }
 
-  const cards = Array.from(grid.querySelectorAll(".articles__card"));
+  // Suporta tanto articles__card quanto case-card
+  let cards = Array.from(grid.querySelectorAll(".articles__card"));
+  if (cards.length === 0) {
+    cards = Array.from(grid.querySelectorAll(".case-card"));
+  }
+
   let visibleCount = INITIAL_VISIBLE;
 
   // Esconde cards além dos primeiros 6
@@ -533,8 +543,9 @@ window.addEventListener('scroll', () => {
 // SEÇÃO 8: CASE FILTERS
 // ============================================
 // Sistema de filtros para casos de sucesso
-// Filtra por modalidade, formato e objetivo
+// Filtra por tipo, modalidade, formato e objetivo
 
+const filterTipo = document.getElementById('filter-tipo');
 const filterModalidade = document.getElementById('filter-modalidade');
 const filterFormato = document.getElementById('filter-formato');
 const filterObjetivo = document.getElementById('filter-objetivo');
@@ -543,22 +554,25 @@ const allCaseCards = document.querySelectorAll('.case-card');
 
 // Função para aplicar os filtros
 const applyFilters = () => {
+  const tipoValue = filterTipo?.value || '';
   const modalidadeValue = filterModalidade?.value || '';
   const formatoValue = filterFormato?.value || '';
   const objetivoValue = filterObjetivo?.value || '';
 
   allCaseCards.forEach((card) => {
+    const cardTipo = card.getAttribute('data-tipo') || '';
     const cardModalidade = card.getAttribute('data-modalidade') || '';
     const cardFormato = card.getAttribute('data-formato') || '';
     const cardObjetivo = card.getAttribute('data-objetivo') || '';
 
     // Verifica se o card atende a todos os filtros ativos
+    const matchTipo = !tipoValue || cardTipo === tipoValue;
     const matchModalidade = !modalidadeValue || cardModalidade === modalidadeValue;
     const matchFormato = !formatoValue || cardFormato.includes(formatoValue);
     const matchObjetivo = !objetivoValue || cardObjetivo.includes(objetivoValue);
 
     // Mostra ou esconde o card baseado nos filtros
-    if (matchModalidade && matchFormato && matchObjetivo) {
+    if (matchTipo && matchModalidade && matchFormato && matchObjetivo) {
       card.classList.remove('is-hidden');
     } else {
       card.classList.add('is-hidden');
@@ -567,6 +581,7 @@ const applyFilters = () => {
 };
 
 // Event listeners para os filtros
+filterTipo?.addEventListener('change', applyFilters);
 filterModalidade?.addEventListener('change', applyFilters);
 filterFormato?.addEventListener('change', applyFilters);
 filterObjetivo?.addEventListener('change', applyFilters);
@@ -574,6 +589,7 @@ filterObjetivo?.addEventListener('change', applyFilters);
 // Event listener para o botão de reset
 resetFiltersBtn?.addEventListener('click', () => {
   // Reseta todos os selects
+  if (filterTipo) filterTipo.value = '';
   if (filterModalidade) filterModalidade.value = '';
   if (filterFormato) filterFormato.value = '';
   if (filterObjetivo) filterObjetivo.value = '';

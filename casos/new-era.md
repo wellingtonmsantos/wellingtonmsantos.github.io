@@ -1,11 +1,12 @@
 ---
 nome: NEW ERA
-profissao: Grupo de treino
-categoria: [performance, saude]
+profissao: Studio Cross - Leme/SP
+
 foto: /assets/img/casos/new-era.jpg
+tipo: empresa
 modalidade: CrossFit
 formato: [Presencial, Online]
-objetivo: Performance
+objetivo: [Performance]
 
 contexto: Grupo de pessoas que querem evoluir juntas. Online e Offline.
 

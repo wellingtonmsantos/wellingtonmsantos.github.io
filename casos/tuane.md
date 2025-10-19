@@ -1,11 +1,12 @@
 ---
 nome: Tuane Liano
 profissao: Contadora
-categoria: [performance]
+
 foto: /assets/img/casos/tuane.jpg
+tipo: pessoa
 modalidade: CrossFit
 formato: [Presencial, Online]
-objetivo: Performance
+objetivo: [Performance]
 
 contexto: Sempre fui muito magra e tive problemas posturais que me geravam dor.
 

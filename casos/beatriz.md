@@ -1,8 +1,9 @@
 ---
 nome: Beatriz Mancini
 profissao: Biomédica
-categoria: [performance, saude]
+
 foto: /assets/img/casos/beatriz.jpg
+tipo: pessoa
 modalidade: Personal Trainer
 formato: [Presencial]
 objetivo: [Performance, Saude]

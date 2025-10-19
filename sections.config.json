@@ -1,0 +1,10 @@
+{
+  "hero": true,
+  "sobre": true,
+  "modalidades": true,
+  "casos": true,
+  "projetos": true,
+  "videos": false,
+  "artigos": true,
+  "contato": true
+}

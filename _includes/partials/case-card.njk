@@ -1,5 +1,6 @@
 <article class="case-card fade-in"
   data-category="{{ caso.data.categoria }}"
+  {% if caso.data.tipo %}data-tipo="{{ caso.data.tipo }}"{% endif %}
   {% if caso.data.modalidade %}data-modalidade="{{ caso.data.modalidade }}"{% endif %}
   {% if caso.data.formato %}data-formato="{{ caso.data.formato | join(',') if caso.data.formato | isArray else caso.data.formato }}"{% endif %}
   {% if caso.data.objetivo %}data-objetivo="{{ caso.data.objetivo | join(',') if caso.data.objetivo | isArray else caso.data.objetivo }}"{% endif %}>

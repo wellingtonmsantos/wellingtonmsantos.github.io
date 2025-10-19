@@ -107,6 +107,21 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Filtro para filtrar por tipo (empresa ou pessoa)
+  eleventyConfig.addFilter("filterByTipo", (casos, tipo) => {
+    if (!Array.isArray(casos)) {
+      return [];
+    }
+
+    return casos.filter(caso => {
+      if (!isVisible(caso)) {
+        return false;
+      }
+
+      return caso.data.tipo === tipo;
+    });
+  });
+
   // Filtro para buscar artigos/projetos por título
   eleventyConfig.addFilter("searchByTitle", (items, searchTerm) => {
     if (!Array.isArray(items)) {
@@ -190,14 +205,16 @@ module.exports = function(eleventyConfig) {
     return categorias;
   });
 
-  // Coleção de casos de sucesso (ordenados por data: mais novo primeiro)
+  // Coleção de casos de sucesso (ordenados por campo 'ordem')
   eleventyConfig.addCollection("casos", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("casos/**/*.md")
       .filter(isVisible)
       .sort((a, b) => {
-        // Ordena DESC: mais recente primeiro
-        return new Date(b.data.data) - new Date(a.data.data);
+        // Ordena ASC pelo campo 'ordem' (menor valor = aparece primeiro)
+        const ordemA = a.data.ordem || 999;
+        const ordemB = b.data.ordem || 999;
+        return ordemA - ordemB;
       });
   });
 

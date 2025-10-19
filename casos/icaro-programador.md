@@ -1,8 +1,9 @@
 ---
 nome: Ícaro
 profissao: Programador
-categoria: [performance, saude]
+
 foto: /assets/img/casos/icaro.jpg
+tipo: pessoa
 modalidade: Personal Trainer
 formato: [Presencial]
 objetivo: [Performance, Saude]
