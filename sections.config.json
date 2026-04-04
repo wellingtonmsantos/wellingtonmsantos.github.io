@@ -1,0 +1,11 @@
+{
+  "hero": true,
+  "sobre": true,
+  "publicacoes": true,
+  "modalidades": false,
+  "casos": true,
+  "projetos": false,
+  "videos": false,
+  "artigos": true,
+  "contato": false
+}

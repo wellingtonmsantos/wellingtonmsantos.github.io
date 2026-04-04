@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {# Título dinâmico #}
+    <title>
+      {%- if title -%}
+        {{ title }} | {{ site.title }}
+      {%- else -%}
+        {{ site.title }}
+      {%- endif -%}
+    </title>
+    
+    {# Descrição dinâmica #}
+    <meta name="description" content="{{ description or site.description }}">
+    
+    {# Favicon #}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    {# Fontes #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    {# CSS #}
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    {# CSS adicional (opcional) #}
+    {% if extraCss %}
+      {% for css in extraCss %}
+        <link rel="stylesheet" href="{{ css }}">
+      {% endfor %}
+    {% endif %}
+  </head>
+  
+  <body>
+    {# Header #}
+    {% include "partials/header.njk" %}
+    
+    {# Conteúdo principal (definido pelos layouts filhos) #}
+    <main>
+      {{ content | safe }}
+    </main>
+    
+    {# Footer #}
+    {% include "partials/footer.njk" %}
+  </body>
+</html>

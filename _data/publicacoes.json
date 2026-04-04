@@ -1,0 +1,132 @@
+[
+  {
+    "titulo": "Time-course effects of functional fitness sessions performed at different intensities on the metabolic, hormonal, and BDNF responses in trained men",
+    "autores": "Tibana RA, De Sousa Neto IV, De Sousa NMF, Dos Santos WM, Prestes J, Neto JHF, Dominski FH, Kennedy MD, Voltarelli FA",
+    "revista": "BMC Sports Science, Medicine and Rehabilitation",
+    "ano": 2022,
+    "doi": "https://doi.org/10.1186/s13102-022-00412-6",
+    "area": "fisiologia",
+    "resumo": "Avalia os efeitos ao longo do tempo de sessões de condicionamento físico funcional em diferentes intensidades sobre respostas metabólicas, hormonais e de BDNF em homens treinados.",
+    "destaque": true
+  },
+  {
+    "titulo": "Função cognitiva após exercícios aeróbicos com e sem restrição do fluxo sanguíneo em adultos mais velhos",
+    "autores": "Santos WMD, Sardeli AV, Moraes DFG, Venturini MLF, Santos LC, Cavaglieri CR, Middleton LE, Chacon-Mikahil MPT",
+    "revista": "Revista Conexões",
+    "ano": 2022,
+    "doi": "https://doi.org/10.20396/conex.v20i00.8666856",
+    "area": "cognição",
+    "resumo": "Compara o efeito agudo de exercícios aeróbicos com e sem restrição do fluxo sanguíneo na função cognitiva de adultos mais velhos, avaliados pelo teste de Stroop.",
+    "destaque": false
+  },
+  {
+    "titulo": "Metabolomic Signature throughout 16 Weeks of Combined Aerobic and Resistance Exercise Training in Older Women with Metabolic Syndrome",
+    "autores": "Sardeli AV, Castro A, Gadelha VB, Santos WM, Lord JM, Cavaglieri CR, Chacon-Mikahil MPT",
+    "revista": "Metabolites",
+    "ano": 2022,
+    "doi": "https://doi.org/10.3390/metabo12111041",
+    "area": "dados",
+    "resumo": "Analisa a assinatura metabolomica ao longo de 16 semanas de treinamento combinado aeróbico e de resistência em mulheres idosas com síndrome metabólica.",
+    "destaque": false
+  },
+  {
+    "titulo": "The Effect of Combined Exercise Versus Aerobic Exercise on Cognition and Mood among Hypertensive Older Adults: Randomized Clinical Trial",
+    "autores": "Santos WM, Sardeli AV, Gáspari AF, Moraes D, Gadelha VB, Middleton LE, Chacon-Mikahil MPT",
+    "revista": "Healthcare",
+    "ano": 2022,
+    "doi": "https://doi.org/10.36648/1791-809X.16.1.909",
+    "area": "cognição",
+    "resumo": "Ensaio clínico randomizado comparando exercício combinado versus aeróbico sobre cognição e humor em idosos hipertensos.",
+    "destaque": true
+  },
+  {
+    "titulo": "Comprehensive Time-Course Effects of Combined Training on Hypertensive Older Adults: A Randomized Control Trial",
+    "autores": "Sardeli AV, Gáspari AF, Santos WM, De Araujo AA, De Angelis K, Mariano LO, Cavaglieri CR, Fernhall B, Chacon-Mikahil MPT",
+    "revista": "International Journal of Environmental Research and Public Health",
+    "ano": 2022,
+    "doi": "https://doi.org/10.3390/ijerph191811042",
+    "area": "saúde",
+    "resumo": "Ensaio clínico randomizado avaliando os efeitos ao longo do tempo do treinamento combinado em idosos hipertensos, com parâmetros imunológicos e autonômicos.",
+    "destaque": false
+  },
+  {
+    "titulo": "Resistance-Trained Individuals Can Underestimate the Intensity of the Resistance Training Session",
+    "autores": "Dos Santos WM, Junior ACT, Braz TV, Lopes CR, Brigatto FA, Dos Santos JW",
+    "revista": "Journal of Strength and Conditioning Research",
+    "ano": 2022,
+    "doi": "https://journals.lww.com/nsca-jscr/fulltext/2022/06000/resistance_trained_individuals_can_underestimate.4.aspx",
+    "area": "performance",
+    "resumo": "Investiga se indivíduos treinados em musculação conseguem estimar com precisão a intensidade de suas sessões de treinamento resistido.",
+    "destaque": false
+  },
+  {
+    "titulo": "Influence of physical training on the food choices of elderly individuals",
+    "autores": "Sardeli AV, Bellotto ML, Moraes DFG, Santos WM, Gadelha V, Ferreira MLV, Chacon-Mikahil MPT",
+    "revista": "O Mundo da Saúde",
+    "ano": 2020,
+    "doi": "",
+    "area": "saúde",
+    "resumo": "Avalia a influência do treinamento físico nas escolhas alimentares de idosos, comparando diferentes modalidades de exercício.",
+    "destaque": false
+  },
+  {
+    "titulo": "Moderate aerobic exercise, but not anticipation of exercise, improves cognitive control",
+    "autores": "Bergelt M, Yuan VF, O'Brien R, Middleton LE, Santos WM",
+    "revista": "PLoS One",
+    "ano": 2020,
+    "doi": "https://doi.org/10.1371/journal.pone.0242270",
+    "area": "cognição",
+    "resumo": "Estuda se o exercício aeróbico moderado agudo e/ou a antecipação do exercício melhora o controle cognitivo em adultos.",
+    "destaque": false
+  },
+  {
+    "titulo": "Dispositional mindfulness influences the balance control in elderly",
+    "autores": "Sardeli AV, Sartori CR, Santos WM, Brandao AF, Chacon-Mikahil MPT",
+    "revista": "Journal of Innovation and Healthcare Management",
+    "ano": 2019,
+    "doi": "",
+    "area": "saúde",
+    "resumo": "Investigação da relação entre mindfulness disposicional e controle do equilíbrio em idosos.",
+    "destaque": false
+  },
+  {
+    "titulo": "Time-course of health-related adaptations in response to combined training in hypertensive elderly: immune and autonomic modulation interactions",
+    "autores": "Sardeli AV, Gáspari AF, Santos WMD, Moraes DFG, Gadelha VB, Santos LCD, Ferreira MLV, Prudêncio SMJ, Bonfante ILP, Rodrigues B, Cavaglieri CR, Fernhall B, Chacon-Mikahil MPT",
+    "revista": "Motriz",
+    "ano": 2018,
+    "doi": "",
+    "area": "fisiologia",
+    "resumo": "Analisa as adaptações de saúde ao longo do tempo em resposta ao treinamento combinado em idosos hipertensos, com foco em interações entre modulação imune e autonômica.",
+    "destaque": false
+  },
+  {
+    "titulo": "Importância da força muscular para a qualidade de vida de idosos sedentários",
+    "autores": "Gadelha VB, Sardeli AV, Santos WM, Ribeiro CP, Moraes DFG, Cavaglieri CR, Chacon-Mikahil MPT",
+    "revista": "Revista Brasileira de Qualidade de Vida",
+    "ano": 2017,
+    "doi": "",
+    "area": "saúde",
+    "resumo": "Analisa a importância da força muscular para a qualidade de vida de idosos sedentários.",
+    "destaque": false
+  },
+  {
+    "titulo": "Benefício do exercício de força sobre a função cognitiva no envelhecimento",
+    "autores": "Sardeli AV, Moraes DFG, Santos WM, Chacon-Mikahil MPT",
+    "revista": "Revista Científica do Instituto de Ensino Superior de Itapira",
+    "ano": 2017,
+    "doi": "",
+    "area": "cognição",
+    "resumo": "Revisão sobre os benefícios do exercício de força sobre a função cognitiva no processo de envelhecimento.",
+    "destaque": false
+  },
+  {
+    "titulo": "Elderly perform lower number of repetitions maximum than young at low instead high load resistance exercise",
+    "autores": "Santos LC, Ferreira MLV, Gáspari AF, Santos WM, Cavaglieri CR, Chacon-Mikahil MPT",
+    "revista": "Revista Terapia Manual",
+    "ano": 2017,
+    "doi": "",
+    "area": "performance",
+    "resumo": "Investiga se idosos realizam menor número de repetições máximas que jovens em cargas baixas, mas não em cargas altas, no exercício resistido.",
+    "destaque": false
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "personal-trainer",
+    "titulo": "Personal Trainer",
+    "badges": ["Presencial", "Online"],
+    "descricao": "Atendimento individual com controle de carga, dados fisiológicos e feedback contínuo para evolução segura e consistente.",
+    "bullets": [
+      "Planejamento 100% personalizado",
+      "Monitoramento de progresso com dados",
+      "Relatórios mensais mensuráveis"
+    ],
+    "cta": "Quero treino personalizado"
+  },
+  {
+    "slug": "crossfit",
+    "titulo": "CrossFit",
+    "badges": ["Presencial", "Online"],
+    "descricao": "Periodização e ajuste de intensidade em contextos de alta exigência, com foco em técnica, performance e longevidade.",
+    "bullets": [
+      "Gestão de volume e intensidade",
+      "Prevenção de lesões com análise de movimento",
+      "Métricas de performance por ciclo"
+    ],
+    "cta": "Quero evoluir no CrossFit"
+  },
+  {
+    "slug": "hyrox",
+    "titulo": "HYROX",
+    "badges": ["Presencial", "Online"],
+    "descricao": "Preparação para provas híbridas unindo resistência, força e recuperação baseada em dados fisiológicos.",
+    "bullets": [
+      "Estratégia por blocos (meso/micro)",
+      "Testes e checkpoints de performance",
+      "Controle de recuperação (HRR/sono)"
+    ],
+    "cta": "Quero me preparar para HYROX"
+  },
+  {
+    "slug": "treino-hibrido",
+    "titulo": "Treino Híbrido",
+    "badges": ["Presencial", "Online"],
+    "descricao": "Combinação inteligente de musculação e endurance para quem quer força e resistência ao mesmo tempo, sem sacrificar um pelo outro.",
+    "bullets": [
+      "Periodização dual: força + cardio",
+      "Equilíbrio entre modalidades sem overtraining",
+      "Protocolo baseado em evidência científica"
+    ],
+    "cta": "Quero treino híbrido"
+  }
+]

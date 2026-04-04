@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./node_modules/.bin/eleventy)",
+      "WebFetch(domain:link.springer.com)",
+      "WebFetch(domain:periodicos.sbu.unicamp.br)",
+      "WebFetch(domain:www.mdpi.com)",
+      "WebFetch(domain:bmcsportsscimedrehabil.biomedcentral.com)",
+      "WebFetch(domain:journals.lww.com)",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\21k-running.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-running.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\image \\(1\\) - Copy.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-antes-depois.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\Gemini_Generated_Image_codzxtcodzxtcodz.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-squat.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\Gemini_Generated_Image_317h2l317h2l317h.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\grupo-crossfit.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\Anhanguera-Corse.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-palestra.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\FOTO-2.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-foto2.png\")",
+      "Bash(cp \"C:\\\\Users\\\\Wellington Santos\\\\Meu Drive\\\\ALL-FILES-WELL\\\\5_MKT-DIGITAL\\\\0-FOTOS-ALL\\\\athlete-crossfit.png\" \"C:\\\\Dev\\\\well-site\\\\assets\\\\img\\\\wellington-handstand.png\")"
+    ]
+  }
+}

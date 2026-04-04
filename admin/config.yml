@@ -1,0 +1,141 @@
+backend:
+  name: github
+  repo: wellingtonmsantos/wellingtonmsantos.github.io
+  branch: main
+  base_url: https://api.netlify.com
+
+media_folder: assets/img/uploads
+public_folder: /assets/img/uploads
+
+collections:
+
+  # ── ALUNOS / CASES ──────────────────────────────────────────
+  - name: casos
+    label: Alunos & Cases
+    folder: casos
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Nome, name: title, widget: string }
+      - { label: Visível no site, name: visible, widget: boolean, default: true }
+      - { label: Idade, name: idade, widget: number, required: false }
+      - { label: Profissão, name: profissao, widget: string, required: false }
+      - label: Modalidade
+        name: modalidade
+        widget: select
+        options: [Personal Trainer, CrossFit, HYROX, Treino Híbrido, Musculação]
+        required: false
+      - label: Formato
+        name: formato
+        widget: select
+        options: [Presencial, Online]
+        required: false
+      - label: Tipo
+        name: tipo
+        widget: select
+        options: [pessoa, empresa]
+        required: false
+      - { label: Objetivo, name: objetivo, widget: string, required: false }
+      - { label: Resultado, name: resultado, widget: string, required: false }
+      - { label: Tempo de treino, name: tempo, widget: string, required: false, hint: "Ex: 6 meses, 1 ano" }
+      - { label: Depoimento, name: depoimento, widget: text, required: false }
+      - { label: Foto, name: foto, widget: image, required: false }
+      - label: Objetivo (tag)
+        name: objetivo_tag
+        widget: select
+        options: [Performance, Saude]
+        required: false
+
+  # ── PROJETOS ────────────────────────────────────────────────
+  - name: projetos
+    label: Projetos
+    folder: projetos
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Visível no site, name: visible, widget: boolean, default: true }
+      - label: Categoria
+        name: category
+        widget: select
+        options: [tecnologia, palestras, outros]
+        required: false
+      - { label: Descrição curta, name: description, widget: text, required: false }
+      - { label: Link, name: link, widget: string, required: false }
+      - { label: Imagem, name: imagem, widget: image, required: false }
+      - { label: Data, name: date, widget: date, required: false }
+      - { label: Conteúdo, name: body, widget: markdown, required: false }
+
+  # ── ARTIGOS / CONTEÚDO ──────────────────────────────────────
+  - name: artigos
+    label: Artigos & Conteúdo
+    folder: artigos
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Visível no site, name: visible, widget: boolean, default: true }
+      - label: Categoria
+        name: category
+        widget: select
+        options: [performance, saude, dados, tecnologia]
+        required: false
+      - { label: Descrição curta, name: description, widget: text, required: false }
+      - { label: Data, name: date, widget: date, required: false }
+      - { label: Imagem, name: imagem, widget: image, required: false }
+      - { label: Conteúdo, name: body, widget: markdown, required: false }
+
+  # ── PUBLICAÇÕES CIENTÍFICAS ──────────────────────────────────
+  - name: publicacoes
+    label: Publicações Científicas
+    files:
+      - label: Lista de Publicações
+        name: publicacoes
+        file: _data/publicacoes.json
+        fields:
+          - label: Artigos
+            name: publicacoes
+            widget: list
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Autores, name: autores, widget: string }
+              - { label: Revista, name: revista, widget: string }
+              - { label: Ano, name: ano, widget: number }
+              - { label: DOI / Link, name: doi, widget: string, required: false }
+              - label: Área
+                name: area
+                widget: select
+                options: [fisiologia, cognição, performance, saúde, dados]
+              - { label: Resumo, name: resumo, widget: text }
+              - { label: Destaque, name: destaque, widget: boolean, default: false }
+
+  # ── MODALIDADES ─────────────────────────────────────────────
+  - name: modalidades-data
+    label: Modalidades
+    files:
+      - label: Lista de Modalidades
+        name: modalidades
+        file: _data/modalidades.json
+        fields:
+          - label: Modalidades
+            name: modalidades
+            widget: list
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - label: Badges
+                name: badges
+                widget: list
+                field: { label: Badge, name: badge, widget: string }
+              - { label: Descrição, name: descricao, widget: text }
+              - label: Bullets
+                name: bullets
+                widget: list
+                field: { label: Item, name: item, widget: string }
+              - { label: CTA, name: cta, widget: string }

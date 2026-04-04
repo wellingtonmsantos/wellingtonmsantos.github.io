@@ -1,0 +1,19 @@
+<article class="pub-card glass-panel" data-area="{{ publicacao.area }}">
+  <div class="pub-card__header">
+    <span class="pub-card__badge pub-card__badge--{{ publicacao.area }}">
+      {{ publicacao.area | capitalize }}
+    </span>
+    <span class="pub-card__year">{{ publicacao.ano }}</span>
+  </div>
+  <h3 class="pub-card__title">{{ publicacao.titulo }}</h3>
+  <p class="pub-card__authors">{{ publicacao.autores }}</p>
+  <p class="pub-card__journal">
+    <em>{{ publicacao.revista }}</em>
+  </p>
+  <p class="pub-card__resumo">{{ publicacao.resumo }}</p>
+  {% if publicacao.doi %}
+  <a class="pub-card__link" href="{{ publicacao.doi }}" target="_blank" rel="noopener">
+    Ver artigo completo →
+  </a>
+  {% endif %}
+</article>
