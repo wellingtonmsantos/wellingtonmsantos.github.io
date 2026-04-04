@@ -1724,9 +1724,11 @@ main > .section + .section {
   }
 
   .about__photo {
-    position: relative;
+    position: relative !important;
     top: auto;
-    max-width: 200px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 280px !important;
     margin-inline: auto;
   }
 
