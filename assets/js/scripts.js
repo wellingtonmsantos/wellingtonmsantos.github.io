@@ -637,6 +637,9 @@ window.addEventListener('scroll', () => {
       var ROWS = 2;
       var GAP  = 16;
 
+      // Garante que todos os cards estão visíveis (reseta o load-more)
+      items.forEach(function (item) { item.style.display = ''; });
+
       // Cria a track
       var track = document.createElement('div');
       track.className = 'paged-carousel__track';
@@ -678,7 +681,7 @@ window.addEventListener('scroll', () => {
         track.style.transform = 'translateX(-' + offset + 'px)';
       }
 
-      applyCardWidths();
+      requestAnimationFrame(applyCardWidths);
       window.addEventListener('resize', function () {
         applyCardWidths();
         goTo(currentPage);
