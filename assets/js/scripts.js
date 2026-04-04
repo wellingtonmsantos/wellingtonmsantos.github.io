@@ -631,61 +631,43 @@ window.addEventListener('scroll', () => {
     function initPagedCarousel(grid) {
       if (!grid || grid.dataset.carouselDone) return;
       var items = Array.from(grid.children);
-      if (items.length < 2) return;
+      if (!items.length) return;
       grid.dataset.carouselDone = '1';
-
-      var ROWS = 2;
-      var GAP  = 16;
-
-      // Garante que todos os cards estão visíveis (reseta o load-more)
       items.forEach(function (item) { item.style.display = ''; });
 
-      // Cria a track
+      var currentPage = 0;
       var track = document.createElement('div');
       track.className = 'paged-carousel__track';
-      items.forEach(function (item) { track.appendChild(item); });
+      track.style.cssText = 'display:flex;transition:transform 0.5s ease;';
+
+      function getCols() {
+        return window.innerWidth >= 1024 ? 4 : window.innerWidth >= 600 ? 2 : 1;
+      }
+
+      function buildPages() {
+        var cols = getCols();
+        var perPage = cols * 2; // 2 linhas
+        while (track.firstChild) track.removeChild(track.firstChild);
+        for (var i = 0; i < items.length; i += perPage) {
+          var page = document.createElement('div');
+          page.style.cssText = 'display:grid;grid-template-columns:repeat(' + cols + ',1fr);gap:1rem;width:100%;flex-shrink:0;align-content:start;';
+          items.slice(i, i + perPage).forEach(function (item) { page.appendChild(item); });
+          track.appendChild(page);
+        }
+      }
 
       grid.classList.add('paged-carousel');
       grid.innerHTML = '';
       grid.appendChild(track);
+      buildPages();
 
-      var currentPage = 0;
-
-      function getCols() {
-        var w = grid.clientWidth;
-        if (w >= 1024) return 4;
-        if (w >= 600)  return 2;
-        return 1;
-      }
-
-      function getCardWidth() {
-        var cols = getCols();
-        return (grid.clientWidth - (cols - 1) * GAP) / cols;
-      }
-
-      function applyCardWidths() {
-        var w = getCardWidth();
-        Array.from(track.children).forEach(function (c) {
-          c.style.width = w + 'px';
-        });
-      }
-
-      function totalPages() {
-        return Math.ceil(items.length / (getCols() * ROWS));
-      }
+      function totalPages() { return track.children.length; }
 
       function goTo(page) {
-        var cols = getCols();
         currentPage = ((page % totalPages()) + totalPages()) % totalPages();
-        var offset = currentPage * cols * (getCardWidth() + GAP);
-        track.style.transform = 'translateX(-' + offset + 'px)';
+        var pageWidth = grid.getBoundingClientRect().width;
+        track.style.transform = 'translateX(-' + (currentPage * pageWidth) + 'px)';
       }
-
-      requestAnimationFrame(applyCardWidths);
-      window.addEventListener('resize', function () {
-        applyCardWidths();
-        goTo(currentPage);
-      });
 
       // Auto-avança a cada 5s
       var timer = setInterval(function () { goTo(currentPage + 1); }, 5000);
@@ -695,9 +677,18 @@ window.addEventListener('scroll', () => {
         timer = setInterval(function () { goTo(currentPage + 1); }, 5000);
       });
 
-      grid.addEventListener('carousel-reset', function () {
-        currentPage = 0;
-        track.style.transform = 'translateX(0)';
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          var p = currentPage;
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(0)';
+          buildPages();
+          currentPage = 0;
+          goTo(p);
+          setTimeout(function () { track.style.transition = 'transform 0.5s ease'; }, 50);
+        }, 200);
       });
     }
 
@@ -712,18 +703,17 @@ window.addEventListener('scroll', () => {
         var track = casosGrid.querySelector('.paged-carousel__track');
         if (!track) return;
 
-        // Para o carrossel e converte para grid normal
+        // Coleta todos os items de dentro das páginas
+        var allItems = [];
+        Array.from(track.children).forEach(function (page) {
+          Array.from(page.children).forEach(function (item) { allItems.push(item); });
+        });
+
         casosGrid.classList.remove('paged-carousel');
         casosGrid.style.display = '';
-        track.style.transform = '';
-        track.style.transition = 'none';
-
-        // Move os cards de volta para o grid
-        var cards = Array.from(track.children);
         casosGrid.innerHTML = '';
-        cards.forEach(function (card) { casosGrid.appendChild(card); });
+        allItems.forEach(function (item) { casosGrid.appendChild(item); });
 
-        // Esconde o botão
         verMaisBtn.closest('.articles__load-more').style.display = 'none';
       }, { once: true });
     }
