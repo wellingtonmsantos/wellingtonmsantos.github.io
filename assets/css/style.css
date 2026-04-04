@@ -1725,12 +1725,7 @@ main > .section + .section {
   }
 
   .about__photo {
-    position: relative !important;
-    top: auto;
-    width: 100%;
-    max-width: 100%;
-    min-height: 280px !important;
-    margin-inline: auto;
+    display: none;
   }
 
   .about__photo img {
